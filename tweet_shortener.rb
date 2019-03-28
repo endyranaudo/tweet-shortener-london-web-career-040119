@@ -17,8 +17,10 @@ end
 
 def word_substituter(tweet)
   shortened_tweet = []
+  word_to_change == dictionary.keys
   tweet.split(" ").each do |word|
-    if word == dictionary.keys
+    if word == word_to_change(downcase)
+      
   binding.pry
 end
 end

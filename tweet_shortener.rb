@@ -19,7 +19,7 @@ def word_substituter(tweet)
   shortened_tweet = []
   words_to_change = dictionary.keys
   tweet.split(" ").collect do |word|
-    if word == words_to_change(downcase)
+    if words_to_change.include?(word.downcase)
       shortened_tweet << word
     else
       shortened_tweet << word
